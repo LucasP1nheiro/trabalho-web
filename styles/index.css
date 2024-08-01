@@ -12,6 +12,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
 }
 
 
@@ -74,10 +75,32 @@ a {
 .banner {
     width: 100vw;
     height: 100vh;
-    background-image: url('https://preview.colorlib.com/theme/feliciano/images/bg_1.jpg');
+    background-image: url('../assets/bg_1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+#next-image-button, #previous-image-button {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+}
+
+#next-image-button {
+    left: 97%;
+}
+
+#previous-image-button {
+    right: 97%;
+}
+
+#next-image-button:hover, #previous-image-button:hover {
+    cursor: pointer;
 }
 
 .overlay {
@@ -128,6 +151,7 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 3rem;
     padding-bottom: 3rem;
+    list-style: none;
 }
 
 .featured-item {
@@ -141,8 +165,4 @@ a {
     height: 81px;
     width: 81px;
     border-radius: 99999px;
-}
-
-.featured-item p {
-    color: var(--secondary);
 }
