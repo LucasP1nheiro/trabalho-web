@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelm Bistrot</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/about.css">
 </head>
 <body>
     <div id="header-container">
@@ -29,7 +30,7 @@
             </ul>
         </nav>
     </div>
-    <section class="banner" id="banner">
+    <main class="banner" id="banner">
         <div class="overlay">
             <button id="next-image-button">
                 <img src="./assets/right-arrow.svg"/>
@@ -64,9 +65,46 @@
                 </li>
             </ul>
         </div>
+    </main>
+    <section id="about">
+        <div class="about-container">
+            <div id="about-images-container">
+                 <div id="about-image-1"></div>
+                 <div id="about-image-2"></div>
+            </div>
+            <div id="about-text-container">
+                <h2 class="cursive" id="about-cursive">Sobre</h2>
+                <h3>Pelm Bistrot</h3>
+                <p>Desvende os segredos da culinária francesa em um ambiente aconchegante. Do clássico ao contemporâneo, nosso menu te surpreenderá a cada dia.</p>
+                <p>Seg - Sex <strong>8AM - 11PM</strong></p>
+                <h3 id="phone">(11) 4034-7800</h3>
+            </div>
+        </div>
+        <div class="stats-container">
+            <ul>
+                <li class="stats-item">
+                    <h3 class="number-ticker" akhi="18">0</h3>
+                    <p>Anos de experiência</p>
+                </li>
+                <li class="stats-item">
+                    <h3 class="number-ticker" akhi="100">0</h3>
+                    <p>Pratos</p>
+                </li>
+                <li class="stats-item">
+                    <h3 class="number-ticker" akhi="50">0</h3>
+                    <p>Funcionários</p>
+                </li>
+                <li class="stats-item">
+                    <h3 class="number-ticker" akhi="15000">0</h3>
+                    <p>Clientes felizes</p>
+                </li>
+            </ul>
+        </div>
+
     </section>
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/carousel.js" type="module"></script>
+    <script src="./scripts/number-ticker.js" type="module"></script>
 </body>
 </html>
