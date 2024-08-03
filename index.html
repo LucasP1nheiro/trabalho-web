@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pelm Bistrot</title>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/services.css">
 </head>
+
 <body>
     <div id="header-container">
         <nav>
@@ -33,10 +36,10 @@
     <main class="banner" id="banner">
         <div class="overlay">
             <button id="next-image-button">
-                <img src="./assets/right-arrow.svg"/>
+                <img src="./assets/right-arrow.svg" />
             </button>
             <button id="previous-image-button">
-                <img src="./assets/left-arrow.svg"/>
+                <img src="./assets/left-arrow.svg" />
             </button>
             <div class="overlay-text-container">
                 <h1 class="cursive">Pelm Bistrot</h1>
@@ -44,22 +47,26 @@
             </div>
             <ul class="featured">
                 <li class="featured-item">
-                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-1.jpg" alt="Imagem de Prato">
+                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-1.jpg"
+                        alt="Imagem de Prato">
                     <h3>Carne Grelhada com Batata</h3>
                     <p>Carne, Batata, Arroz, Tomate</p>
                 </li>
                 <li class="featured-item">
-                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-2.jpg" alt="Imagem de Prato">
+                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-2.jpg"
+                        alt="Imagem de Prato">
                     <h3>Carne Grelhada com Batata</h3>
                     <p>Carne, Batata, Arroz, Tomate</p>
                 </li>
                 <li class="featured-item">
-                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-3.jpg" alt="Imagem de Prato">
+                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-3.jpg"
+                        alt="Imagem de Prato">
                     <h3>Carne Grelhada com Batata</h3>
                     <p>Carne, Batata, Arroz, Tomate</p>
                 </li>
                 <li class="featured-item">
-                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-4.jpg" alt="Imagem de Prato">
+                    <img src="https://preview.colorlib.com/theme/feliciano/images/breakfast-4.jpg"
+                        alt="Imagem de Prato">
                     <h3>Carne Grelhada com Batata</h3>
                     <p>Carne, Batata, Arroz, Tomate</p>
                 </li>
@@ -69,13 +76,14 @@
     <section id="about">
         <div class="about-container">
             <div id="about-images-container">
-                 <div id="about-image-1"></div>
-                 <div id="about-image-2"></div>
+                <div id="about-image-1"></div>
+                <div id="about-image-2"></div>
             </div>
             <div id="about-text-container">
                 <h2 class="cursive" id="about-cursive">Sobre</h2>
                 <h3>Pelm Bistrot</h3>
-                <p>Desvende os segredos da culinária francesa em um ambiente aconchegante. Do clássico ao contemporâneo, nosso menu te surpreenderá a cada dia.</p>
+                <p>Desvende os segredos da culinária francesa em um ambiente aconchegante. Do clássico ao contemporâneo,
+                    nosso menu te surpreenderá a cada dia.</p>
                 <p>Seg - Sex <strong>8AM - 11PM</strong></p>
                 <h3 id="phone">(11) 4034-7800</h3>
             </div>
@@ -100,11 +108,35 @@
                 </li>
             </ul>
         </div>
+    </section>
 
+    <section id="services">
+        <div id="services-container">
+            <h2 class="cursive">Serviços</h2>
+            <h3>Serviços de Buffet</h3>
+            <ul>
+                <li class="services-item">
+                    <img src="./assets/cake.svg" alt="a">
+                    <h3>Festa de aniversário</h3>
+                    <p>Variedade de aperitivos, pratos principais e sobremesas. Inclui mini-salgados, finger foods, bolo personalizado e bebidas variadas. Adaptado à idade dos convidados e preferências do aniversariante.</p>
+                </li>
+                <li class="services-item">
+                    <img src="./assets/hand-shake.svg" alt="">
+                    <h3>Reunião de negócios</h3>
+                    <p>Opções leves e práticas como sanduíches gourmet, saladas e petiscos saudáveis. Bebidas não alcoólicas. Foco em refeições que não interrompam a reunião.</p>
+                </li>
+                <li class="services-item">
+                    <img src="./assets/hand-platter.svg" alt="">
+                    <h3>Festa de casamento</h3>
+                    <p>Mais elaborado, com entradas refinadas, pratos principais variados, acompanhamentos e sobremesas. Inclui serviço de bar. Apresentação alinhada ao tema e decoração do casamento.</p>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/carousel.js" type="module"></script>
     <script src="./scripts/number-ticker.js" type="module"></script>
 </body>
+
 </html>
