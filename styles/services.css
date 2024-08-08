@@ -2,7 +2,7 @@
     width: 100vw;
     padding-top: 20px;
     padding-bottom: 100px;
-    background-color: #f9fafb;
+    background-color: var(--muted-color)
 }
 
 #services-container {

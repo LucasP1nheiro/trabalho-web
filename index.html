@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="./styles/services.css">
     <link rel="stylesheet" href="./styles/chefs.css">
     <link rel="stylesheet" href="./styles/testimonials.css">
+    <link rel="stylesheet" href="./styles/header.css">
 </head>
 
 <body>
-    <div id="header-container">
+    <header id="header">
         <nav>
             <a id="navbar-brand">Pelm Bistrot</a>
             <ul>
@@ -34,7 +35,23 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </header>
+    <button id="themeToggle" class="theme-toggle">
+        <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 20V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.93 4.93L6.34 6.34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.66 17.66L19.07 19.07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 12H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.34 17.66L4.93 19.07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.07 4.93L17.66 6.34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    </button>
     <main class="banner" id="banner">
         <div class="overlay">
             <button id="next-image-button">
@@ -119,17 +136,17 @@
             <ul>
                 <li class="services-item">
                     <img src="./assets/cake.svg" alt="Ícone de bolo">
-                    <h3>Festa de aniversário</h3>
+                    <h2>Festa de aniversário</h2>
                     <p>Variedade de aperitivos, pratos principais e sobremesas. Inclui mini-salgados, finger foods, bolo personalizado e bebidas variadas. Adaptado à idade dos convidados e preferências do aniversariante.</p>
                 </li>
                 <li class="services-item">
                     <img src="./assets/hand-shake.svg" alt="Ícone de aperto de mão">
-                    <h3>Reunião de negócios</h3>
+                    <h2>Reunião de negócios</h2>
                     <p>Opções leves e práticas como sanduíches gourmet, saladas e petiscos saudáveis. Bebidas não alcoólicas. Foco em refeições que não interrompam a reunião.</p>
                 </li>
                 <li class="services-item">
                     <img src="./assets/hand-platter.svg" alt="Ícone de buffet">
-                    <h3>Festa de casamento</h3>
+                    <h2>Festa de casamento</h2>
                     <p>Mais elaborado, com entradas refinadas, pratos principais variados, acompanhamentos e sobremesas. Inclui serviço de bar. Apresentação alinhada ao tema e decoração do casamento.</p>
                 </li>
             </ul>
@@ -144,7 +161,7 @@
                 <div class="staff-item">
                     <div id="staff-image-1" class="staff-image"></div>
                     <h3>John Smooth</h3>
-                    <span>Dono do Restaurante</span>
+                    <p>Dono do Restaurante</p>
                     <ul class="social-media">
                         <li>
                             <a href="https://x.com">
@@ -171,7 +188,7 @@
                 <div class="staff-item">
                     <div id="staff-image-2" class="staff-image"></div>
                     <h3>Rebeca Welson</h3>
-                    <span>Chefe de cozinha</span>
+                    <p>Chefe de cozinha</p>
                     <ul class="social-media">
                         <li>
                             <a href="https://x.com">
@@ -198,7 +215,7 @@
                 <div class="staff-item">
                     <div id="staff-image-3" class="staff-image"></div>
                     <h3>Kharl Branyt</h3>
-                    <span>Chefe</span>
+                    <p>Chefe</p>
                     <ul class="social-media">
                         <li>
                             <a href="https://x.com">
@@ -225,7 +242,7 @@
                 <div class="staff-item">
                     <div id="staff-image-4" class="staff-image"></div>
                     <h3>Luke Simon</h3>
-                    <span>Chefe</span>
+                    <p>Chefe</p>
                     <ul class="social-media">
                         <li>
                             <a href="https://x.com">
@@ -332,6 +349,7 @@
 
     <script src="./scripts/index.js"></script>
     <script src="./scripts/carousel.js" type="module"></script>
+    <script src="./scripts/theme-toggle.js" type="module"></script>
     <script src="./scripts/number-ticker.js" type="module"></script>
     <script src="./scripts/testimonials.js" type="module"></script>
 </body>

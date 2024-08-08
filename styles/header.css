@@ -1,0 +1,108 @@
+#header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#header nav {
+    max-width: 1140px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-item a {
+    color: #fff;
+}
+
+#book-table {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #c8a97e;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+#navbar-brand {
+    font-weight: 900;
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: white;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.theme-toggle svg {
+    stroke: #000; 
+}
+  
+.dark-theme .theme-toggle svg {
+    stroke: #fff; 
+}
+
+.theme-toggle .sun,
+.theme-toggle .moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s;
+}
+
+.theme-toggle .sun {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+}
+
+.theme-toggle .moon {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg) scale(0);
+}
+
+.dark-theme .theme-toggle .sun {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0);
+}
+
+.dark-theme .theme-toggle .moon {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0) scale(1);
+}
+

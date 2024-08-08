@@ -15,62 +15,31 @@ html {
     overflow-x: hidden;
 }
 
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --muted-color: #f9fafb;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme {
+    --background-color: #09090b;
+    --text-color: #ffffff;
+    --muted-color: #18181b;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 
 a {
     text-decoration: none;
 }
 
-#header-container {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-}
 
-#header-container nav {
-    max-width: 1140px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-#header-container nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 32px;
-}
-
-.nav-item a {
-    color: #fff;
-}
-
-#book-table {
-    padding: 1rem;
-    border-radius: 5px;
-    background-color: #c8a97e;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
-}
-
-#navbar-brand {
-    font-weight: 900;
-    display: inline-block;
-    padding-top: 0.3125rem;
-    padding-bottom: 0.3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
-    line-height: inherit;
-    white-space: nowrap;
-    color: white;
-}
 
 .banner {
     width: 100vw;
