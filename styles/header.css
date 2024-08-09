@@ -1,9 +1,29 @@
 #header {
     position: absolute;
     top: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
+    transition: all 0.3s ease;
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;
+    z-index: 40;
+}
+
+#header.fixed {
+    position: fixed;
+    padding: 0;
+    background-color: var(--background-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateY(-100%);
+    animation: slideDown 0.3s forwards;
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
 }
 
 #header nav {
@@ -14,10 +34,23 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+
+#header a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+#header.fixed a {
+    color: var(--text-color);
+}
+
+#header.fixed nav {
+    border-bottom: none;
+}
+
 
 #header nav ul {
     display: flex;
@@ -26,18 +59,22 @@
     gap: 32px;
 }
 
-.nav-item a {
-    color: #fff;
-}
-
 #book-table {
     padding: 1rem;
     border-radius: 5px;
     background-color: #c8a97e;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 0.8rem;
-    padding-bottom: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+#book-table a {
+    color: #fff !important;
+}
+
+#header.fixed #book-table {
+    border-radius: 0;
 }
 
 #navbar-brand {
@@ -59,14 +96,27 @@
     padding: 8px;
     position: absolute;
     right: 16px;
-    top: 16px;
+    top: 22px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
     background-color: var(--background-color);
     border-radius: 8px;
     z-index: 100;
+}
+
+.theme-toggle.fixed {
+    position: fixed;
+    top: 6px; 
+    transform: translateY(-100%);
+    animation: slideDownToggle 0.3s forwards;
+}
+
+@keyframes slideDownToggle {
+    to {
+        transform: translateY(0);
+    }
 }
 
 .theme-toggle svg {
