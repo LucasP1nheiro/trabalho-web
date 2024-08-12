@@ -156,3 +156,9 @@
     transform: translate(-50%, -50%) rotate(0) scale(1);
 }
 
+@media(max-width: 1139px) {
+    #header nav {
+        max-width: 850px;
+    }
+}
+

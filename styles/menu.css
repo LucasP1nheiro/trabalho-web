@@ -284,5 +284,22 @@ form button:hover {
     }
 }
 
+@media (max-width: 600px){
+    
+    .item-menu{
+        width: 500px;
+        padding-bottom: 5px;
+
+    }
+    .item-menu > img{
+        display: none;
+    }
+    .category-button{
+        width: 40px;
+        height: 50px;
+        font-size: medium;
+    }
+}
+
 
 

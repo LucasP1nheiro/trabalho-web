@@ -156,3 +156,11 @@
 .page {
     animation: fadeIn 0.1s ease-in-out;
 }
+
+
+@media(max-width: 1139px) {
+    .testimonials-container {
+        max-width: 850px;
+        padding-bottom: 200px;
+    }
+}

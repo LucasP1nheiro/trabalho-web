@@ -139,3 +139,21 @@ button:hover{
     }
 }
 
+@media (max-width: 600px){
+    #book-table-page-overlay > h1{
+        font-size: 45px;
+    }
+    #book-form{
+        width: 600px;
+        padding-bottom: 5px;
+        padding-left: 5%;
+    }
+    #book-table-image > img{
+        display: none;
+    }
+    .button-decoration{
+        margin-left: 35%;
+        border-radius: 5px;
+    }
+}
+

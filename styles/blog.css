@@ -185,3 +185,9 @@
     background-color: #c8a97e !important;
     color: var(--background-color) !important;
 }
+
+@media(max-width: 1139px) {
+    #blog-container {
+        max-width: 850px;
+    }
+}
