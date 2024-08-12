@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelm Bistrot | Reservar uma mesa</title>
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/book-table.css">
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        function enviarForms() {
+            var nome = document.getElementById("name");
+
+            if (nome.value != "nomeid") {
+                alert('Obrigado Sr(a). ' + nome.value + '. Sua reserva foi feita com sucesso!');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a id="navbar-brand">Pelm Bistrot</a>
+            <ul>
+                <li class="nav-item">
+                    <a href="../index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./about.html">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./menu.html">Menu</a>
+                </li class="nav-item">
+                <li class="nav-item" id="book-table">
+                    <a href="#">Reservar uma mesa</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <button id="themeToggle" class="theme-toggle">
+        <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2V4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 20V22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.93 4.93L6.34 6.34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.66 17.66L19.07 19.07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 12H22" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.34 17.66L4.93 19.07" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.07 4.93L17.66 6.34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+    </button>
+    <main id="book-table-page-banner" class="scrollable-banner">
+        <div id="book-table-page-overlay">
+                <h1>Reservar uma mesa</h1>
+                <div id="breadcrumbs">
+                    <a href="../index.html">Início ></a>
+                    <a href="./menu.html">Reserva ></a>
+                </div>
+        </div>
+    </main>
+
+    <section id="book">
+        <div id="book-table-image">
+            <img src="../assets/logo.png" alt="Logo">
+        </div>
+        <form onsubmit="enviarForms();" id="book-form">
+            <h2 class="cursive">Reservar</h2>
+            <h3>Faça a sua reserva </h3>
+            <input type="text" name="name" id="name" placeholder="Nome" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="tel" name="phone" id="phone" placeholder="Telefone" required>
+            <input type="date" name="date" id="date" placeholder="Data" required>
+            <select name="horario" required> 
+                <option value="horario">Horário</option> 
+                <option value="10">10:00 à 11:00</option> 
+                <option value="11">11:00 à 12:00</option> 
+                <option value="12">12:00 à 13:00</option> 
+                <option value="13">13:00 à 14:00</option> 
+                <option value="14">14:00 à 15:00</option> 
+                <option value="15">15:00 à 16:00</option> 
+                <option value="16">16:00 à 17:00</option> 
+                <option value="17">17:00 à 18:00</option> 
+                <option value="18">18:00 à 19:00</option> 
+                <option value="19">19:00 à 20:00</option> 
+                <option value="20">20:00 à 21:00</option> 
+                <option value="21">21:00 à 22:00</option> 
+                <option value="22">22:00 à 23:00</option> 
+            </select>
+            <input type="number" name="person" id="person" placeholder="Quantidade de Pessoas">
+            <button type="submit" class="button-decoration"> Reservar</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>PELM Bistrot</h3>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Horários</h3>
+                <div class="open-hours">
+                    <p><spam>Segunda</spam> <span>10:00 - 22:00</span></p>
+                    <p><spam>Terça</spam> <span>10:00 - 22:00</span></p>
+                    <p><spam>Quarta</spam> <span>10:00 - 22:00</span></p>
+                    <p><spam>Quinta</spam> <span>10:00 - 22:00</span></p>
+                    <p><spam>Sexta</spam> <span>10:00 - 00:00</span></p>
+                    <p><spam>Sábado</spam> <span>10:00 - 00:00</span></p>
+                    <p><spam>Domingo</spam> <span>10:00 - 00:00</span></p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Instagram</h3>
+                <div class="instagram-images">
+                    <img src="../assets/ig1.jpg" alt="Image 1">
+                    <img src="../assets/ig2.jpg" alt="Image 2">
+                    <img src="../assets/ig5.jpg" alt="Image 3">
+                    <img src="../assets/ig4.jpg" alt="Image 4">
+                    <img src="../assets/ig3.jpg" alt="Image 5">
+                    <img src="../assets/ig6.jpg" alt="Image 6">
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Far far away, behind the word mountains, far from the countries.</p>
+                <form id="form-footer">
+                    <input type="email" placeholder="Enter email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright ©2024 All rights reserved | This website is made with <span>❤</span> by ADS 5° Semestre</p>
+        </div>
+    </footer>
+
+    <script src="../scripts/theme-toggle.js" type="module"></script>
+    <script src="../scripts/header-position-change.js" type="module"></script>
+</body>
+
+</html>
