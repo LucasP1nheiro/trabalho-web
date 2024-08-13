@@ -63,14 +63,16 @@
 }
 
 .item-menu {
-    width: 556px;
+    width: 100%;
+    max-width: 556px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
     border: 1px solid var(--border-color);
 }
 
 .item-menu img {
-    width: 276px; 
+    width: 100%;
+    max-width: 276px; 
     height: 242px;
     object-fit: cover;
 }
@@ -119,7 +121,6 @@
     padding-right: 19px;
 }
 
-/* FOOTER */
 footer {
     color: #fff;
     background-color: #000000ec;
@@ -300,6 +301,3 @@ form button:hover {
         font-size: medium;
     }
 }
-
-
-

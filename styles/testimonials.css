@@ -1,7 +1,8 @@
 #testimonials {
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     width: 100vw;
-    padding-top: 100px;
+    padding: 150px 0;
 }
 
 .testimonials-container {
@@ -25,12 +26,15 @@
     font-size: 50px;
     font-weight: 900;
     line-height: 1.2;
+    text-align: center;
 }
 
 .carousel {
     display: flex;
+    align-items: end;
     transition: transform 0.5s ease-in-out;
     margin-top: 64px;
+    margin-bottom: 64px;
 }
 
 .page {
@@ -66,6 +70,7 @@
     font-weight: 400;
     font-size: 22px;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .testimonial > span {
@@ -158,9 +163,21 @@
 }
 
 
-@media(max-width: 1139px) {
+@media(max-width: 1300px) {
     .testimonials-container {
-        max-width: 850px;
+        max-width: 768px;
         padding-bottom: 200px;
     }
 }
+
+@media(max-width: 768px) {
+    .page {
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
+
+

@@ -24,7 +24,8 @@ h1{
 
 #book {
     display: flex;
-    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #book-form > h2 {
@@ -39,7 +40,6 @@ h1{
 }
 
 #book-table-image {
-    /* background-image: url('../assets/blog-3.jpg'); */
     background-color: var(--muted-color);
     width: 50%;
     background-size: cover;
@@ -60,7 +60,8 @@ h1{
 }
 
 #book-form  > input, #book-form  > select{
-    width: 470px;
+    width: 100%;
+    max-width: 490px;
     height: 55px;
     padding: 4px 16px;
     border: 1px solid var(--border-color);
@@ -110,6 +111,7 @@ button:hover{
     justify-content: end;
     align-items: center;
     padding-bottom: 50px;
+    text-align: center;
 
     > * + * {
         margin-top: 1rem; 
@@ -148,12 +150,16 @@ button:hover{
         padding-bottom: 5px;
         padding-left: 5%;
     }
-    #book-table-image > img{
+    #book-table-image {
         display: none;
     }
     .button-decoration{
         margin-left: 35%;
         border-radius: 5px;
+    }
+
+    #book-form  > input, #book-form  > select {
+        width: 100%;
     }
 }
 
