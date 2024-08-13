@@ -160,13 +160,6 @@
     transform: translate(-50%, -50%) rotate(0) scale(1);
 }
 
-@media(max-width: 1300px) {
-    #header nav {
-        max-width: 768px;
-    }
-}
-
-
 .menu-icon {
     display: none;
     cursor: pointer;
@@ -174,6 +167,13 @@
     width: 12px;
     height: 12px;
 }
+
+@media(max-width: 1300px) {
+    #header nav {
+        max-width: 768px;
+    }
+}
+
 
 @media (max-width: 768px) {
     #header, #header.fixed {
